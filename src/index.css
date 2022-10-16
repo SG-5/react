@@ -12,32 +12,70 @@ code {
     monospace;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+
+.button {
   padding: 16px;
-}
-
-.photoCard {
-  position: relative;
-  width: 200px;
-  height: 300px;
-}
-
-.image {
-  max-width: 200px;
-}
-
-.input > input {
-  height: 42px;
+  width: 84px;
+  border: 1px;
+  border-radius: 6px;
   font-size: 24px;
+  background-color: #009688;
+  color: white;
 }
 
-.heartIcon {
-  position: absolute;
-  top: 4px;
-  left: 4px;
+.disabled {
+  background-color: #80808082;
+}
+
+.message {
+  width: 200px;
+  height: 100px;
+  color: white;
+  background-color: fuchsia;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.icon {
   width: 24px;
   height: 24px;
+  position: absolute;
+  left: 270px;
+}
+
+.galleryItem {
+  height: 200px;
+  width: auto;
+  max-width: 400px;
+}
+
+.divisions {
+  display: flex;
+  flex-direction: column;
+}
+
+.division {
+  padding: 8px;
+  border: 1px solid steelblue;
+  border-radius: 4px;
+  margin: 16px;
+}
+
+.content {
+  display: flex;
+  gap: 16px;
+}
+
+.paginationWrapper {
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.active {
+  background-color: lawngreen;
+  border: none;
 }
