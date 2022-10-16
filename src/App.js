@@ -1,9 +1,6 @@
 import { Component } from 'react';
 import Counter from './components/counter';
 import Timer from './components/timer';
-import CounterF from './components/counterF';
-import logo from './logo.svg';
-
 
 
 
