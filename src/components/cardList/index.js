@@ -1,5 +1,5 @@
 import { Component } from "react";
-import API_URL from "../constants/api";
+import API_URL from "./../../constants/api.js";
 import PhotoCard from "./../photoCard"
 
 
