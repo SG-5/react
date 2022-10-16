@@ -1,25 +1,49 @@
+import { Component } from 'react';
+import Counter from './components/counter';
+import Timer from './components/timer';
+import CounterF from './components/counterF';
 import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+
+
+class App extends Component {
+	constructor() {
+		super();
+		this.state = {
+			isFinished: false,
+			isButtonClickable: false,
+		};
+	}
+	
+	setIsButtonClickable = () => {
+		this.setState({
+			isButtonClickable: !this.state.isButtonClickable,
+		});
+	}
+	
+	setFinished = () => {
+		this.setState({
+			isFinished: true,
+		})
+	}
+	
+	render() {
+		// console.log('Log ::: this.state ::: ', this.state);
+		const { isFinished, isButtonClickable } = this.state;
+		return(
+			<div>
+				<Timer setFinish={this.setFinished} setIsButtonClickable={this.setIsButtonClickable} />
+				<Counter isClickable={isButtonClickable} isFinished={isFinished} title="First" initial={0} />
+			</div>
+		)
+	}
+};
+
+
+
+
+
+
+ export default App;
+
