@@ -36,21 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.card{
-  width: 300px;
-  height: 400px;
-  border: 1px solid #ccc;
-  border-radius:5px ;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.wrapper{
-
-  position: relative;
-}
-.container{
-  display: flex;
-  gap: 8px;
-}
