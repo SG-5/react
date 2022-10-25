@@ -79,3 +79,9 @@ code {
   background-color: lawngreen;
   border: none;
 }
+
+.isDane{
+
+  text-decoration:line-through ;
+  color: red;
+}
